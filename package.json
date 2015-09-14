@@ -32,7 +32,8 @@
     "request",
     "rest",
     "http",
-    "OpenWeatherMap"
+    "OpenWeatherMap",
+    "clima"
   ],
   "keywords": [
     "weather",

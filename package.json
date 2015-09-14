@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/robfree/node-clima"
   },
   "bugs" : {
     "email": "roberto@serranodiaz.com",
-    "url": ""
+    "url": "https://github.com/robfree/node-clima/issues"
   },
   "dependencies": {
     "request": "^2.61.0"

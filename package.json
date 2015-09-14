@@ -1,6 +1,6 @@
 {
   "name": "node-clima",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple wrapper for OpenWeatherMap API",
   "author": "Roberto Serrano Diaz-Grande",
   "main": "./lib/node-clima",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "https://github.com/robfree/node-clima"
   },
-  "bugs" : {
+  "bugs": {
     "email": "roberto@serranodiaz.com",
     "url": "https://github.com/robfree/node-clima/issues"
   },
@@ -33,8 +33,8 @@
     "rest",
     "http",
     "OpenWeatherMap"
-],
-"keywords": [
+  ],
+  "keywords": [
     "weather",
     "api",
     "simple",

@@ -1,6 +1,6 @@
 {
   "name": "node-clima",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple wrapper for OpenWeatherMap API",
   "author": "Roberto Serrano Diaz-Grande",
   "main": "./lib/node-clima",

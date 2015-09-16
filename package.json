@@ -41,6 +41,7 @@
     "simple",
     "rest",
     "request",
-    "OpenWeatherMap"
+    "OpenWeatherMap",
+    "clima"
   ]
 }

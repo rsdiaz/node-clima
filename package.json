@@ -33,7 +33,8 @@
     "rest",
     "http",
     "OpenWeatherMap",
-    "clima"
+    "clima",
+    "temp"
   ],
   "keywords": [
     "weather",

@@ -7,29 +7,38 @@ d = new clima({
 });
 
 module.exports = {
-  'Opciones pasadas al constructor invalidas.': function(test) {
+  'Invalid options passed to constructor.': function(test) {
     test.expect(1);
     test.throws(function(){
       c = new clima();
-    }, Error, 'Opciones pasadas al constructor invalidas, no lanzo error');
+    }, Error, 'Invalid options passed to constructor, did not throw error.');
     test.done();
   },
-  'Tipo de datos format pasados al constructor invalido': function(test) {
+  'Format is required': function(test) {
+    test.expect(1);
+    test.throws(function(){
+      c = new clima({
+
+      });
+    }, Error, 'Format is required, did not throw error');
+    test.done();
+  },
+  'Invalid format': function(test) {
     test.expect(1);
     test.throws(function() {
       var c = new clima({
-        format: ['212', '212']
+        format: 'asd'
       })
-    }, Error, 'Tipo de datos format invalido');
+    }, Error, 'Invalid format, did not throw error.');
     test.done();
   },
-  'Tipo de datos units pasados al constructor invalido': function(test) {
+  'Invalid units': function(test) {
     test.expect(1);
     test.throws(function() {
       var c = new clima({
         units: 12313
       })
-    }, Error, 'Tipo de datos format invalido');
+    }, Error, 'Invalid units, did not throw error.');
     test.done();
   },
   // Invalid byCityName

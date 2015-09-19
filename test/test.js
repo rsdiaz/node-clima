@@ -32,13 +32,34 @@ module.exports = {
     }, Error, 'Invalid format, did not throw error.');
     test.done();
   },
+  'Invalid apikey': function(test) {
+    test.expect(1);
+    test.throws(function() {
+      var c = new clima({
+        format: 'json',
+        apikey: 2323
+      })
+    }, Error, 'Invalid apikey, did not throw error.');
+    test.done();
+  },
   'Invalid units': function(test) {
     test.expect(1);
     test.throws(function() {
       var c = new clima({
+        format: 'json',
         units: 12313
       })
     }, Error, 'Invalid units, did not throw error.');
+    test.done();
+  },
+  'Invalid language': function(test) {
+    test.expect(1);
+    test.throws(function() {
+      var c = new clima({
+        format: 'json',
+        language: 133
+      })
+    }, Error, 'Invalid language, did not throw error.');
     test.done();
   },
   // Invalid byCityName

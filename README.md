@@ -16,7 +16,7 @@ Install via git clone:
     $ npm install
 
 ### Documentation
-You can find the docs for the API of this client at http://robfree.github.io/node-clima/
+You can find the docs for the API of this client at http://robfree.github.io/node-clima/.
 Additionally, the official OpenWeatherMap API documentation is a very useful resource. [http://openweathermap.org](http://openweathermap.org/current#other)
 
 Methods API call:
@@ -29,7 +29,6 @@ Methods API call:
 
 **currentByZip**
 
-for more info [http://openweathermap.org](http://openweathermap.org/current#other)
 
 Usage:
 

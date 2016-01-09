@@ -2,10 +2,22 @@
 # JavaScript OpenWeatherMap API for Node.js
 A Node.JS module, which provides an object oriented wrapper for the OpenWeatherMap API.
 
-### Installation
 Api Key is required.
+Get your API key from [here].
+### Installation
+Install with the Node.JS package manager.
 
     npm install node-clima
+
+Install via git clone:
+
+    $ git clone git://github.com/robfree/node-clima.git
+    $ cd node-clima
+    $ npm install
+
+### Documentation
+You can find the docs for the API of this client at http://robfree.github.io/node-clima/
+Additionally, the official OpenWeatherMap API documentation is a very useful resource. [http://openweathermap.org](http://openweathermap.org/current#other)
 
 Methods API call:
 
@@ -36,3 +48,4 @@ Usage:
 		    console.log(data);
 		  }
 	  });
+[here]: http://home.openweathermap.org/users/sign_in

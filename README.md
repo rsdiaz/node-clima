@@ -1,8 +1,11 @@
 [![Build Status](https://travis-ci.org/robfree/node-clima.svg?branch=master)](https://travis-ci.org/robfree/node-clima)
-# node-clima
-## Simple wrapper for OpenWeatherMap API for Node.js
+# JavaScript OpenWeatherMap API for Node.js
+A Node.JS module, which provides an object oriented wrapper for the OpenWeatherMap API.
 
+### Installation
 Api Key is required.
+
+    npm install node-clima
 
 Methods API call:
 

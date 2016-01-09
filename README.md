@@ -2,10 +2,12 @@
 # node-clima
 ## Simple wrapper for OpenWeatherMap API for Node.js
 
+Api Key is required.
+
 Methods API call:
 
 **currentByCityName**
-You can call by city name or city name and country code. API responds with a list of results that match a searching word.
+
 **currentByCityId**
 
 **currentByCoordinates**

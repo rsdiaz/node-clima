@@ -5,7 +5,7 @@
 Methods API call:
 
 **currentByCityName**
-
+You can call by city name or city name and country code. API responds with a list of results that match a searching word.
 **currentByCityId**
 
 **currentByCoordinates**
@@ -16,16 +16,17 @@ for more info [http://openweathermap.org](http://openweathermap.org/current#othe
 
 Usage:
 
-    var clima = require('node-clima');
+  var clima = require('node-clima');
 
-    var c = new clima({
-		format: 'json',    // required
-		units: 'Celsius'  // optional
-		});
+  var c = new clima({
+	   format: 'json',    // required
+     apikey: 'your api key'   // REQUIRED
+     units: 'Celsius'  // optional
+	});
 
 	c.currentByCityName({
-		cityName: 'London'
+    cityName: 'London',
 		callback: function(err, data) {
-			console.log(data);
+		    console.log(data);
 		}
 	});

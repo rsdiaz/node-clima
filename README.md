@@ -16,17 +16,18 @@ for more info [http://openweathermap.org](http://openweathermap.org/current#othe
 
 Usage:
 
-  var clima = require('node-clima');
 
-  var c = new clima({
-	   format: 'json',    // required
-     apikey: 'your api key'   // REQUIRED
-     units: 'Celsius'  // optional
-	});
+    var clima = require('node-clima');
 
-	c.currentByCityName({
-    cityName: 'London',
-		callback: function(err, data) {
+    var c = new clima({
+	     format: 'json',    // required
+       apikey: 'your api key'   // REQUIRED
+       units: 'Celsius'  // optional
+	  });
+
+	  c.currentByCityName({
+      cityName: 'London',
+		    callback: function(err, data) {
 		    console.log(data);
-		}
-	});
+		  }
+	  });

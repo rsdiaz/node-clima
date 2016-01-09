@@ -4,7 +4,7 @@ var assert = require('assert');
 d = new clima({
   format: 'json',
   units: 'Celsius',
-  apikey: '2345164273a393437e74235c3827044c'
+  apikey: ''
 });
 
 module.exports = {

@@ -36,9 +36,9 @@ Print all data to the console.
 Usage:
 
 
-    var clima = require('node-clima');
+    var Clima = require('node-clima');
 
-    var c = new clima({
+    var c = new Clima({
 	     format: 'json',    // required
        apikey: 'your api key'   // REQUIRED
        units: 'Celsius'  // optional

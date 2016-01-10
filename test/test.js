@@ -1,7 +1,7 @@
-var clima = require('../lib/node-clima.js');
+var Clima = require('../lib/node-clima.js');
 var assert = require('assert');
 
-d = new clima({
+d = new Clima({
   format: 'json',
   units: 'Celsius',
   apikey: ''
@@ -11,14 +11,14 @@ module.exports = {
   'Invalid options passed to constructor.': function(test) {
     test.expect(1);
     test.throws(function(){
-      c = new clima();
+      c = new Clima();
     }, Error, 'Invalid options passed to constructor, did not throw error.');
     test.done();
   },
   'Format is required': function(test) {
     test.expect(1);
     test.throws(function(){
-      c = new clima({
+      c = new Clima({
 
       });
     }, Error, 'Format is required, did not throw error');
@@ -27,7 +27,7 @@ module.exports = {
   'Invalid format': function(test) {
     test.expect(1);
     test.throws(function() {
-      var c = new clima({
+      var c = new Clima({
         format: 'asd'
       })
     }, Error, 'Invalid format, did not throw error.');
@@ -36,7 +36,7 @@ module.exports = {
   'Invalid apikey': function(test) {
     test.expect(1);
     test.throws(function() {
-      var c = new clima({
+      var c = new Clima({
         format: 'json',
         apikey: 2323
       })
@@ -46,7 +46,7 @@ module.exports = {
   'Invalid units': function(test) {
     test.expect(1);
     test.throws(function() {
-      var c = new clima({
+      var c = new Clima({
         format: 'json',
         units: 12313
       })
@@ -56,7 +56,7 @@ module.exports = {
   'Invalid language': function(test) {
     test.expect(1);
     test.throws(function() {
-      var c = new clima({
+      var c = new Clima({
         format: 'json',
         language: 133
       })

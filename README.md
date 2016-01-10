@@ -4,7 +4,7 @@
 A Node.JS module, which provides an object oriented wrapper for the OpenWeatherMap API.
 
 Api Key is required.
-Get your API key from [here].
+Get your API key from [here](http://home.openweathermap.org/users/sign_in)
 ### Installation
 Install with the Node.JS package manager.
 
@@ -41,12 +41,11 @@ Usage:
 
     var c = new Clima({
 	     format: 'json',    // required
-       apikey: 'your api key'   // REQUIRED
        units: 'Celsius'  // optional
 	  });
 
 	  c.currentByCityName({
-      cityName: 'London',
+        cityName: 'London',
 		    callback: function(err, data) {
 		    console.log(data);
 		  }

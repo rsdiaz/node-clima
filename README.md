@@ -29,6 +29,8 @@ Methods API call:
 
 **currentByZip**
 
+### Example
+Print all data to the console.
 
 Usage:
 
@@ -47,4 +49,14 @@ Usage:
 		    console.log(data);
 		  }
 	  });
+
+### Running the Tests
+The unit tests are based on the nodeunit module, which may be installed via npm. To run the tests make sure that the npm dependencies are installed by running npm install from the project directory.
+
+    $ nodeunit
+
+Note that a connection to the internet is required to run the tests.
+
+### License
+MIT license. See the LICENSE file for details.
 [here]: http://home.openweathermap.org/users/sign_in

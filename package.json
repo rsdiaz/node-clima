@@ -19,7 +19,9 @@
   "dependencies": {
     "request": "^2.61.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodeunit": "^0.9.1"
+  },
   "tags": [
     "weather",
     "api",

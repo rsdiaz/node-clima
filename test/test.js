@@ -1,4 +1,4 @@
-var Clima = require('../lib/node-clima.js');
+var Clima = require('../lib/node-clima');
 var assert = require('assert');
 
 d = new Clima({

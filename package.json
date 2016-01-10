@@ -4,12 +4,9 @@
   "description": "Simple wrapper for OpenWeatherMap API",
   "author": "Roberto Serrano Diaz-Grande",
   "main": "./lib/node-clima",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "nodeunit",
-    "start": "node ./lib/node-clima.js"
+    "test": "nodeunit test",
+    "coveralls": "jscoverage lib && NODECLIMA_COV=1 nodeunit --reporter=lcov test | coveralls"
   },
   "repository": {
     "type": "git",
@@ -22,9 +19,7 @@
   "dependencies": {
     "request": "^2.61.0"
   },
-  "devDependencies": {
-    "nodeunit": "^0.9.1"
-  },
+  "devDependencies": {},
   "tags": [
     "weather",
     "api",

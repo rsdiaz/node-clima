@@ -17,6 +17,7 @@ Install via git clone:
 
 ### Documentation
 You can find the docs for the API of this client at http://robfree.github.io/node-clima/.
+
 Additionally, the official OpenWeatherMap API documentation is a very useful resource. [http://openweathermap.org](http://openweathermap.org/current#other)
 
 Methods API call:

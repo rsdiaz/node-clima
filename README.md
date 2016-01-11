@@ -42,6 +42,7 @@ Usage:
     var c = new Clima({
 	     format: 'json',    // required
        units: 'Celsius'  // optional
+       apikey: 'YOUR API KEY' // required
 	  });
 
 	  c.currentByCityName({

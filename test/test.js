@@ -3,7 +3,8 @@ var assert = require('assert');
 
 d = new Clima({
   format: 'json',
-  units: 'Celsius'
+  units: 'Celsius',
+  apikey: ''
 });
 
 module.exports = {
@@ -21,6 +22,16 @@ module.exports = {
 
       });
     }, Error, 'Format is required, did not throw error');
+    test.done();
+  },
+  'Invalid API KEY': function(test) {
+    test.expect(1);
+    test.throws(function() {
+      var c = new Clima({
+        format: 'json',
+        apikey: 123
+      })
+    }, Error, 'Invalid API KEY, did not throw error.');
     test.done();
   },
   'Invalid format': function(test) {

@@ -37,20 +37,20 @@ Print all data to the console.
 Usage:
 
 
-    var Clima = require('node-clima');
+    const Clima = require('node-clima');
 
-    var c = new Clima({
-	     format: 'json',    // required
-       units: 'Celsius'  // optional
-       apikey: 'YOUR API KEY' // required
-	  });
+    const c = new Clima({
+	    format: 'json',    // required
+        units: 'Celsius'  // optional
+        apikey: 'YOUR API KEY' // required
+	});
 
-	  c.currentByCityName({
+	c.currentByCityName({
         cityName: 'London',
 		    callback: function(err, data) {
 		    console.log(data);
-		  }
-	  });
+		}
+	});
 
 ### Running the Tests
 The unit tests are based on the nodeunit module, which may be installed via npm. To run the tests make sure that the npm dependencies are installed by running npm install from the project directory.

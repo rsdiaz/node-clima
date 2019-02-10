@@ -12,12 +12,12 @@ Install with the Node.JS package manager.
 
 Install via git clone:
 
-    $ git clone git://github.com/robfree/node-clima.git
+    $ git clone git://github.com/rsdiaz/node-clima.git
     $ cd node-clima
     $ npm install
 
 ### Documentation
-You can find the docs for the API of this client at http://robfree.github.io/node-clima/doc/.
+You can find the docs for the API of this client at http://rsdiaz.github.io/node-clima/doc/.
 
 Additionally, the official OpenWeatherMap API documentation is a very useful resource. [http://openweathermap.org](http://openweathermap.org/current#other)
 

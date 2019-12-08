@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/rsdiaz/node-clima.svg?branch=master)](https://travis-ci.org/rsdiaz/node-clima)
-[![Coverage Status](https://coveralls.io/repos/robfree/node-clima/badge.svg?branch=master&service=github)](https://coveralls.io/github/robfree/node-clima?branch=master)
+
 # JavaScript OpenWeatherMap API for Node.js
 A Node.JS module, which provides an object oriented wrapper for the OpenWeatherMap API.
 
@@ -23,39 +23,38 @@ Additionally, the official OpenWeatherMap API documentation is a very useful res
 
 Methods API call:
 
-**currentByCityName**
+**Current.byCityName()**
 
-**currentByCityId**
+**Current.byCityId()**
 
-**currentByCoordinates**
-
-**currentByZip**
+**Current.byGeographicCoordinates()**
 
 ### Example
 Print all data to the console.
 
 Usage:
 
+```
+const Client = require('node-clima').ClientRequest;
+const Current = require('node-clima').Current;
 
-    const Clima = require('node-clima');
+var apiKey = 'YOUR API KEY'
+var client = new Client();
+var current = new Current(apiKey, client);
 
-    const c = new Clima({
-	    format: 'json',    // required
-        units: 'Celsius'  // optional
-        apikey: 'YOUR API KEY' // required
-	});
-
-	c.currentByCityName({
-        cityName: 'London',
-		    callback: function(err, data) {
-		    console.log(data);
-		}
-	});
+current.byCityName('Tarragona')
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+```
 
 ### Running the Tests
 The unit tests are based on the nodeunit module, which may be installed via npm. To run the tests make sure that the npm dependencies are installed by running npm install from the project directory.
 
-    $ nodeunit
+    $ npm run test
 
 Note that a connection to the internet is required to run the tests.
 

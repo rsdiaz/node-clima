@@ -6,7 +6,7 @@
   "main": "lib/main",
   "typings": "lib/main",
   "scripts": {
-    "test": "jest"
+    "test": "tsc && jest"
   },
   "repository": {
     "type": "git",

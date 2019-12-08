@@ -28,7 +28,9 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>Clima<span class="signature">(obj)</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>Clima<span class="signature">(apiKey, client)</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">Create a new Clima instances</div>
         
     
 </header>
@@ -39,18 +41,16 @@
         
 
     
-
-    
-    <h4 class="name" id="Clima"><span class="type-signature"></span>new Clima<span class="signature">(obj)</span><span class="type-signature"></span></h4>
+    <h2>Constructor</h2>
     
 
     
+    <h4 class="name" id="Clima"><span class="type-signature"></span>new Clima<span class="signature">(apiKey, client)</span><span class="type-signature"></span></h4>
+    
+
+    
 
 
-
-<div class="description">
-    Create a new Clima instances
-</div>
 
 
 
@@ -85,7 +85,30 @@
 
         <tr>
             
-                <td class="name"><code>obj</code></td>
+                <td class="name"><code>apiKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Contains your API KEY</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>client</code></td>
             
 
             <td class="type">
@@ -101,7 +124,7 @@
 
             
 
-            <td class="description last">Contains parameters and their values to sent request.</td>
+            <td class="description last">Contains a instance client</td>
         </tr>
 
     
@@ -142,7 +165,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="node-clima.js.html">node-clima.js</a>, <a href="node-clima.js.html#line23">line 23</a>
+        <a href="clima.js.html">clima.js</a>, <a href="clima.js.html#line16">line 16</a>
     </li></ul></dd>
     
 
@@ -152,6 +175,8 @@
 
     
 </dl>
+
+
 
 
 
@@ -186,421 +211,7 @@
     
 
     
-        <h3 class="subsection-title">Members</h3>
 
-        
-            
-<h4 class="name" id="apikey"><span class="type-signature"></span>apikey<span class="type-signature"></span></h4>
-
-
-
-
-<div class="description">
-    Clima.apikey -> String
-</div>
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="node-clima.js.html">node-clima.js</a>, <a href="node-clima.js.html#line85">line 85</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="format"><span class="type-signature"></span>format<span class="type-signature"></span></h4>
-
-
-
-
-<div class="description">
-    Clima.format -> String
-</div>
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="node-clima.js.html">node-clima.js</a>, <a href="node-clima.js.html#line89">line 89</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="language"><span class="type-signature"></span>language<span class="type-signature"></span></h4>
-
-
-
-
-<div class="description">
-    Clima.language -> String
-</div>
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="node-clima.js.html">node-clima.js</a>, <a href="node-clima.js.html#line80">line 80</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="units"><span class="type-signature"></span>units<span class="type-signature"></span></h4>
-
-
-
-
-<div class="description">
-    Clima.units -> String
-</div>
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="node-clima.js.html">node-clima.js</a>, <a href="node-clima.js.html#line76">line 76</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="url"><span class="type-signature"></span>url<span class="type-signature"></span></h4>
-
-
-
-
-<div class="description">
-    Clima.url -> String
-</div>
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="node-clima.js.html">node-clima.js</a>, <a href="node-clima.js.html#line72">line 72</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="currentByCityName"><span class="type-signature"></span>currentByCityName<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    section: current
- Clima.currentByCityName(obj) -> null
-   - obj (Object): Object that contains parameters and their values to sent request.
-
- ##### Params on the `obj` object:
-
- - cityName (String): Required, city name.
- - countryCode (String): Optional, country code.
- - callback (Function): Required, function callback.
-
-http://openweathermap.org/current#other
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="node-clima.js.html">node-clima.js</a>, <a href="node-clima.js.html#line105">line 105</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
     
 
     
@@ -622,7 +233,7 @@ http://openweathermap.org/current#other
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Feb 10 2019 20:40:28 GMT+0100 (GMT+01:00)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Sun Dec 08 2019 23:48:38 GMT+0100 (GMT+01:00)
 </footer>
 
 <script> prettyPrint(); </script>

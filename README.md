@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/rsdiaz/node-clima.svg?branch=master)](https://travis-ci.org/rsdiaz/node-clima)
+[![Coverage Status](https://coveralls.io/repos/github/rsdiaz/node-clima/badge.svg?branch=master)](https://coveralls.io/github/rsdiaz/node-clima?branch=master)
 
 # JavaScript OpenWeatherMap API for Node.js
 A Node.JS module, which provides an object oriented wrapper for the OpenWeatherMap API.

@@ -1,2 +1,4 @@
 node_modules
-main.js
+coverage
+package-lock.json
+lib

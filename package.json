@@ -1,29 +1,32 @@
 {
   "name": "node-clima",
-  "version": "1.0.6",
+  "version": "1.7.0",
   "description": "Simple wrapper for OpenWeatherMap API",
   "author": "Roberto Serrano Diaz-Grande",
-  "main": "./lib/node-clima",
+  "main": "lib/main",
+  "typings": "lib/main",
   "scripts": {
-    "test": "nodeunit test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/robfree/node-clima"
   },
   "bugs": {
-    "email": "roberto@serranodiaz.com",
+    "email": "roberto@robertoserrano.pro",
     "url": "https://github.com/robfree/node-clima/issues"
   },
   "dependencies": {
-    "request": "^2.61.0"
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "eslint": "^5.13.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "jsdoc": "^3.5.5",
-    "nodeunit": "^0.11.3"
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@types/node-fetch": "^2.5.4",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "jsdoc": "^3.6.3",
+    "typescript": "^3.7.3"
   },
   "tags": [
     "weather",

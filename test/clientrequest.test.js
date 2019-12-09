@@ -23,7 +23,7 @@ describe('la función devuelve un objeto', () => {
   });
 
   test('the fetch fails with an error', () => {
-    return expect(client.makeRequest('jhjhk')).rejects.toThrow('Hubo un problema con la petición fetch');
+    return expect(client.makeRequest('jhjhk')).rejects.toThrow('There was a problem with the fetch request');
   });
 
 });

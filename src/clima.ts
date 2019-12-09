@@ -1,3 +1,4 @@
+// clima.ts
 function checkOptions(option: any, type: string ) {
   if(typeof option !== type) {
     throw new Error(`invalid ${option} passed to constructor.`);

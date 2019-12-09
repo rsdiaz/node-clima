@@ -1,3 +1,4 @@
+// current.ts
 import { Clima } from './clima';
 import qs from 'querystring';
 

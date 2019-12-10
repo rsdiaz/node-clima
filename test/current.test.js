@@ -1,9 +1,7 @@
-import { ClientRequest } from '../lib/clientrequest';
 import { Current } from '../lib/current';
 
 const apiKey = 'YOUR API KEY';
-const client = new ClientRequest();
-const current = new Current(apiKey, client);
+const current = new Current(apiKey);
 
 describe('Incorrect parameters in the methods of the Current class', () => {
 

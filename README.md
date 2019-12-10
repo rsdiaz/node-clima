@@ -36,12 +36,11 @@ Print all data to the console.
 Usage:
 
 ```
-const Client = require('node-clima').ClientRequest;
+
 const Current = require('node-clima').Current;
 
 var apiKey = 'YOUR API KEY'
-var client = new Client();
-var current = new Current(apiKey, client);
+var current = new Current(apiKey);
 
 current.byCityName('Tarragona')
   .then((data) => {

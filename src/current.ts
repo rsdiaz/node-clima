@@ -1,11 +1,15 @@
 // current.ts
 import { Clima } from './clima';
+import { ClientRequest } from './clientrequest';
 import qs from 'querystring';
 
 export class Current extends Clima {
 
-  constructor(apiKey: string, client: object) {
-    super(apiKey, client);
+  client: any;
+  
+  constructor(apiKey: string) {
+    super(apiKey);
+    this.client = new ClientRequest();
   }
 
   async byCityName(cityName: string, countryCode: any = null) {

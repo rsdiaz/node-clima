@@ -10,11 +10,11 @@ describe('Opciones mal pasadas al constructor', () => {
     }).toThrow(Error);
   });
 
-  test('client no es object, lanzo error', () => {
+/*   test('client no es object, lanzo error', () => {
     expect(() => {
       const api = new Clima('string', 'string');
     }).toThrow(Error);
-  });
+  }); */
 });
 
 describe('Propiedades de la clase Clima correctas', () => {
@@ -23,8 +23,8 @@ describe('Propiedades de la clase Clima correctas', () => {
     expect(typeof api.url).toBe(typeof 'string');
   });
 
-  test('Clima.client es de tipo object', () => {
+/*   test('Clima.client es de tipo object', () => {
     expect(typeof api.client).toBe(typeof {});
   });
-
+ */
 });

@@ -9,12 +9,6 @@ describe('Opciones mal pasadas al constructor', () => {
       const api = new Clima(8878, client);
     }).toThrow(Error);
   });
-
-/*   test('client no es object, lanzo error', () => {
-    expect(() => {
-      const api = new Clima('string', 'string');
-    }).toThrow(Error);
-  }); */
 });
 
 describe('Propiedades de la clase Clima correctas', () => {

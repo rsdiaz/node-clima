@@ -1,45 +1,56 @@
 // current.ts
-import { Clima } from './clima';
+import { Clima, IClima } from './clima';
 import { ClientRequest } from './clientrequest';
 import qs from 'querystring';
 
-export class Current extends Clima {
-
+export class Current extends Clima implements IClima {
   client: any;
-  
-  constructor(apiKey: string) {
+  constructor (apiKey: string) {
     super(apiKey);
     this.client = new ClientRequest();
   }
 
-  async byCityName(cityName: string, countryCode: any = null) {
-    if(typeof cityName !== 'string') {
-      throw new Error('the parameter for byCityName() must be a string');
+  async byCityName (cityName: string, countryCode: string) {
+    if (typeof cityName !== 'string') {
+      throw new Error('the parameter for byCityName() must be a string.');
     } else {
-      let query = { q: cityName, appid: this.apiKey }
-      return await this.client.makeRequest(this.url + qs.stringify(query));
+      const query = { q: cityName, appid: this.apiKey };
+      const response = await this.client.makeRequest(this.url + qs.stringify(query));
+      return response;
     }
   }
 
-  async byCityId(cityId: number) {
-    if(typeof cityId == 'number') {
-      let query = {
+  async byCityId (cityId: number) {
+    if (typeof cityId === 'number') {
+      const query = {
         id: cityId,
-        appid: this.apiKey 
-      }
-      return await this.client.makeRequest(this.url + qs.stringify(query));
+        appid: this.apiKey
+      };
+      const response = await this.client.makeRequest(this.url + qs.stringify(query));
+      return response;
     } else {
-      throw new Error('the parameter for byCityId() must be a number');
+      throw new Error('the parameter for byCityId() must be a number.');
     }
   }
 
-  async byGeographicCoordinates(lat: number, lon: number) {
-    if(typeof lat == 'number' && typeof lon == 'number') {
-      let query = { lat: lat, lon: lon, appid: this.apiKey };
-      return await this.client.makeRequest(this.url + qs.stringify(query));
+  async byGeographicCoordinates (lat: number, lon: number) {
+    if (typeof lat === 'number' && typeof lon === 'number') {
+      const query = { lat: lat, lon: lon, appid: this.apiKey };
+      const response = await this.client.makeRequest(this.url + qs.stringify(query));
+      return response;
     } else {
-      throw new Error('the parameters for byGeographicCoordinates() must be a number');
+      throw new Error('the parameters for byGeographicCoordinates() must be a number.');
     }
   }
 
+  async byZipCode (zipCode: string, countryCode: string) {
+    if (typeof zipCode !== 'string' || typeof countryCode !== 'string') {
+      throw new Error('the parameters for byZipCode() must be a string.');
+    } else {
+      const zipQs = `${zipCode},${countryCode}`;
+      const query = { zip: zipQs, appid: this.apiKey };
+      const response = await this.client.makeRequest(this.url + qs.stringify(query));
+      return response;
+    }
+  }
 }

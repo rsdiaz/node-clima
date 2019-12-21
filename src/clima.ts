@@ -1,24 +1,21 @@
 // clima.ts
-function checkOptions(option: any, type: string ) {
-  if(typeof option !== type) {
-    throw new Error(`invalid ${option} passed to constructor.`);
-  }
+
+export interface IClima {
+  url: string;
 }
 
 /**
   * Create a new Clima instances
   * @class
   * @param {String} apiKey - Contains your API KEY
-  * 
   */
 
-export class Clima {
+export class Clima implements IClima {
   url: string = 'http://api.openweathermap.org/data/2.5/weather?';
   apiKey: string;
 
-  constructor(apiKey: string) {
-    checkOptions(apiKey, 'string');
+  constructor (apiKey: string) {
+    if (typeof apiKey !== 'string') throw new Error('invalid apiKey passed to constructor.');
     this.apiKey = apiKey;
   }
-
 }

@@ -1,8 +1,8 @@
 import { ClientRequest } from '../lib/clientrequest';
-const url = 'https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22';
+const url = 'https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=YOUR API KEY';
 const client = new ClientRequest();
 
-describe('Parámetro mal pasados a la función', () => {
+describe('Bad parameters to function', () => {
   test('url es diferente a string, lanzo error', () => {
     expect(() => {
       client.makeRequest(878);
@@ -10,7 +10,7 @@ describe('Parámetro mal pasados a la función', () => {
   });
 });
 
-describe('la función devuelve un objeto', () => {
+describe('function return object', () => {
   test('El request a la api devuelve un objeto', () => {
     const json = client.makeRequest(url);
     expect(typeof json).toBe(typeof {});

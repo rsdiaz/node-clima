@@ -11,7 +11,7 @@ export interface IClima {
   */
 
 export class Clima implements IClima {
-  url: string = 'http://api.openweathermap.org/data/2.5/weather?';
+  url: string = 'http://api.openweathermap.org/data/2.5';
   apiKey: string;
 
   constructor (apiKey: string) {

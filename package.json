@@ -17,7 +17,7 @@
     "url": "https://github.com/rsdiaz/node-clima/issues"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",

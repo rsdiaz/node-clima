@@ -8,7 +8,7 @@ export class ClientRequest {
     return fetch(url)
       .then(res => res.json())
       .catch((error) => {
-        throw new Error('There was a problem with the fetch request');
+        return error;
       });
   }
 }

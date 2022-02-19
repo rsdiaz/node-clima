@@ -25,5 +25,4 @@ describe('function return object', () => {
   test('the fetch fails with an error', () => {
     return expect(client.makeRequest('jhjhk')).rejects.toThrow('There was a problem with the fetch request');
   });
-
 });

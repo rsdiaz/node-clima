@@ -17,6 +17,7 @@
     "url": "https://github.com/rsdiaz/node-clima/issues"
   },
   "dependencies": {
+    "eslint-plugin-jest": "^26.1.1",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
